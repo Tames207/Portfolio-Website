@@ -1,6 +1,6 @@
 /*
 Coloured used:
-Black: #3f4345
+Black: #181A1B
 darkgreen: 286757
 midgreen: 2FC723
 lightgreen: B3F200
@@ -9,12 +9,12 @@ white: D3E0D3
 
 /* next area for font and sizing style */
 body {
-  background-color: #ffffff;
+  background-color: #e6ebe6;
   font-family: 'Caprum', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #000000;
+  color: #181A1B;
 }
 
 h1, h2, h3, h4 {
@@ -46,59 +46,77 @@ img {
 /* next area for hyperlink colours */
 a {
   color: #1833de;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
 }
 a:hover,
 a:focus {
   color: #8390f2;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
 }
-a:active { /* selected link */
+a:active {
   color: #2FC723;
 }
 
-/* next area for button style */
-.button {
+
+.button.nav {
   display: inline-block;
-  background-color: #181A1B;
+  width: 24%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #286757;
   color: #ffffff;
   font-weight: 400;
-  padding: 5px;
-  border-radius: 2px;
+  border-radius: 3px;
   transition: 0.2s opacity;
 }
-.button:hover,
-.button:active {
-  opacity: 0.8;
+.button.nav:hover,
+.button.nav:focus,
+.button.nav:active {
+  background-color: #2FC723;
+  color: #286757;
   text-decoration: none;
+  font-weight: 600;
   }
-.button:visited{
-  color: #FFFFFF;
-}
 
 /* next area for contact button style */
 .button.contact {
-  background-color: #c0c2fa;
-  color: #4247eb;
-  text-transform: uppercase;
-  border: 2px solid #4247eb;
+  width: 150px;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #286757;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 3px;
+  transition: 0.2s opacity;
+}
+.button.contact:hover,
+.button.contact:focus,
+.button.contact:active {
+  background-color: #2FC723;
+  color: #286757;
+  }
+.button.contact:visited{
+  color: #B3F200;
 }
 
-.button.contact:hover,
-.button.contact:active {
-  background-color: #ff7f50;
-  color: #ffffff;
-  }
-
+/* next area for Read button style */
 .button.read {
-    background-color: #666666;
-    color: #b2b4ed;
-    text-transform: uppercase;
-    border: 2px solid #b2b4ed;
-  }
-
+  width: 300px;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #286757;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 3px;
+  transition: 0.2s opacity;
+}
 .button.read:hover,
 .button.read:active {
-    background-color: #ff7f50;
-    color: #ffffff;
-    }
+  background-color: #2FC723;
+  color: #286757;
+  }
+.button.read:visited{
+  color: #B3F200;
+}
