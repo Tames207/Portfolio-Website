@@ -6,24 +6,33 @@
   <meta name="Tyler Ames" content="Tyler Ames">
   <meta name="Portfolio Site" content="Tyer Ames, Portfolio Site, UI/UX Designer">
   <title>Tyler Ames UX/UI Designer Calgary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--normalize below-->
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <!--style sheet below-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--Custom Fonts below-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
   <!-- For the header -->
   <header id="top">
-    <img src="img\Tyler Ames.svg" alt="https://via.placeholder.com/150x50?text=Logo">
+    <img src="img\Tyler Ames.svg" alt="Logo of Tyler Ames" svg width="50%"; svg height: "auto">
       <nav>
         <ul><!-- page navigation section -->
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="miniportal.html">MiniPortal</a></li>
-          <li><a href="files/cv.pdf" target="_blank" download>Download my CV</a></li>
+          <a href="index.html" class="button">Work</a>
+          <a href="about.html" class="button">About</a>
+          <a href="#contact" class="button">Contact</a>
+          <a href="files/cv.pdf" target="_blank" class="button">Download my CV</a>
         </ul>
       </nav>
   </header>
 
-  <main>
+  <main id="work section">
     <!-- First project Section -->
     <div>
       <div>
@@ -40,7 +49,7 @@
         <p>
           Build and prototyped in Adobe XD
         </p>
-        <a href="miniportal.html">Link to MiniPortal Project page</a>
+        <a href="miniportal.html" class="button.read">Link to MiniPortal Project page</a>
       </div>
     </div>
   </main>
@@ -52,7 +61,7 @@
       <p>Do you like my work and want ot dicsuss opportunities? Please get in touch. Call: <a href="tel:14038609803"> 1-403-860-9803</a> or Skype me at <a href="skype:daltorious207">Tyler Ames</a> Prefer sending an email?
       </p>
       <div>
-        <a href="mailto:Ames.Tyler@gmail.com"> Email Me </a>
+        <a href="mailto:Ames.Tyler@gmail.com" class="button contact"> Email Me </a>
       </div>
       <div>
         <!-- Social Media Layout and Placeholder -->
@@ -74,5 +83,4 @@
     </div>
   </footer>
 </body>
-
 </html>
