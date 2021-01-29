@@ -18,31 +18,32 @@
 </head>
 
 <body>
+
   <header id="top">
-    <img src="img\Tyler Ames.svg" alt="Logo of Tyler Ames" svg width="50%"; svg height: "auto">
+    <div class="container">
+      <img class="logo" src="img\Tyler Ames.svg" alt="Logo of Tyler Ames" svg width="50%"svg height: "auto">
       <nav>
-        <ul><!-- page navigation section -->
-          <a href="index.html #work"class="button nav">Work</a>
-          <a href="about.html"class="button nav">About</a>
-          <a href="#contact"class="button nav">Contact</a>
-          <a href="files/cv.pdf" target="_blank" Download class="button nav">Download my CV</a>
+        <ul class="navigation"><!-- page navigation section -->
+          <a href="index.html #work" class="nav > ul > a">Work</a>
+          <a href="#contact" class="nav > ul > a">Contact</a>
+          <a href="files/cv.pdf" target="_blank" class="nav > ul > a">CV</a>
         </ul>
       </nav>
+    </div>
   </header>
 
 <!-- This is the Page title -->
 <main>
-  <div>
-    <h1> Hello and Welcome! </h1>
-  </div>
-
-<!-- This is the main body with image and personal information -->
-<div> <!-- This group is the main container for My Story and Skills & Tools -->
-    <picture>
-      <source srcset="img/about/Tyler Ames 600px.jpg" media="(max-width:767px)">
-      <img src="img/about/Tyler Ames 1200px.jpg" alt="My Image">
-    </picture>
-  <div> <!-- this div is the "My Story" group -->
+  <div class="container">
+    <div> <!-- title area -->
+      <h1> Hello and Welcome! </h1>
+    </div>
+    <div> <!-- main container for My Story and Skills & Tools -->
+      <picture>
+        <source srcset="img/about/Tyler Ames 600px.jpg" media="(max-width:767px)">
+        <img src="img/about/Tyler Ames 1200px.jpg" alt="My Image">
+      </picture>
+      <div> <!-- "My Story" group -->
       <h2> My Story </h2>
       <h3>Where are you based?</h3>
       <p>I grew up in Cochrane Alberta, I moved into the neighbouring city of Calgary and have been living there for 12 years.</p>
@@ -53,13 +54,13 @@
       <h3>What is your professional experience?</h3>
       <p>I went to Art collage right out of high school and got my Bachelor's Degree in Jewellery and Metalsmithing. While there I took a few secondary courses for Visual arts and Design and had a lot of fun! When I got out of collage, I started a job as an apprentice electrician for a Controls HVAC company. After almost a year had past the manager learned that I had an artistic background and asked if I wanted to start a graphics department for the UI for the building controls. The process before me was done individually by each project engineer. After a few months we received a brand-new program for the company and I was selected to learn how to use it and develop the company graphics package. After a good trial and error period with the program (it was brand new and had a lot of bugs to work out) I developed a finished graphics package that was then sent to the other offices around Canada to use. Around 4 years after that another version of the program was released and I again developed a new package that was implemented. From there I began to organize the other office graphic department heads in a Center of Excellence group, or a CoE, in order to keep consistency between the offices and have open discussions about new developments or ideas that we could implement into the standard template. I am still running the graphics and always looking at new things that can be implemented into the UI graphics.</p>
       <a href="files/cv.pdf" target="_blank" download>Download my CV</a>
-    </div>
-  <div> <!-- this div is the "Skills and Tools" group -->
+      </div>
+      <div> <!-- "Skills and Tools" group -->
       <h2>Skills and Tools</h2>
-        <div>
+      <div>
       <h3>Relevant Skills</h3>
-        </div>
-        <div>
+      </div>
+      <div> <!-- Tools list area -->
           <h3>Tools I Use</h3>
             <ul>
               <li>Wireframing: Adobe XD</li>
@@ -68,15 +69,15 @@
               <li>Adobe Illustrator</li>
               <li>HVAC Frontend Development: DGLux</li>
             </ul>
-        </div>
+          </div>
       </div>
     </div>
-</div>
+  </div>
 </main>
 
   <!-- For the footer  -->
   <footer id="contact">
-    <div>
+    <div class="container">
       <h2> Get in Touch </h2>
       <p>Do you like my work and want ot dicsuss opportunities? Please get in touch. Call: <a href="tel:14038609803"> 1-403-860-9803</a> or Skype me at <a href="skype:daltorious207">Tyler Ames</a>
       </p>
