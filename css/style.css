@@ -6,51 +6,27 @@ midgreen: 2FC723
 lightgreen: B3F200
 white: D3E0D3
 */
-
-*{
+* {
   box-sizing: border-box;
 }
+
 /* next area for font and sizing style */
 body {
   background-color: #181A1B;
   font-family: 'Caprum', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #ffffff;
 }
-header{
-  position: fixed;
-  width: 100%;
-  background-color: #D3E0D3;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  margin: 5px;
-  border-bottom: 2px solid #4a4a4a;
-  text-align: center;
-}
-
-main{
-  padding-top: 133px
-}
-footer{
-  width: 100%;
-  background-color: #286757;
-  color: #ffffff;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  margin: 5px;
-  text-align: center;
-}
-
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.50em;
   font-weight: 700;
@@ -65,9 +41,39 @@ h3 {
   font-size: 1.50em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.15em;
   font-weight: 400;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #D3E0D3;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  margin: 5px;
+  border-bottom: 2px solid #4a4a4a;
+  text-align: center;
+}
+
+main {
+  padding-top: 133px
+}
+
+footer {
+  width: 100%;
+  background-color: #286757;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  margin: 5px;
+  text-align: center;
 }
 
 img {
@@ -79,16 +85,18 @@ a {
   color: #B3F200;
   text-decoration: none;
 }
+
 a:hover,
 a:focus {
   color: #8390f2;
   text-decoration: underline;
 }
+
 a:active {
   color: #2FC723;
 }
 
-nav > ul > a {
+nav>ul>a {
   display: inline-block;
   list-style-type: none;
   padding: 2px 10px 2px 10px;
@@ -99,84 +107,205 @@ nav > ul > a {
   border-radius: 3px;
   transition: 0.2s opacity;
 }
-nav > ul > a:hover,
-nav > ul > a:focus,
-nav > ul > a:active {
+
+nav>ul>a:hover,
+nav>ul>a:focus,
+nav>ul>a:active {
   background-color: #2FC723;
   color: #286757;
   text-decoration: none;
   font-weight: 600;
-  }
+}
 
 /* next area for contact button style */
 .button.contact {
-  width: 150px;
-  padding: 10px 0;
   text-align: center;
   background-color: #2FC723;
   color: #ffffff;
   font-weight: 400;
   padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 3px;
-  transition: 0.2s opacity;
+  transition-duration: 0.2s opacity;
 }
+
 .button.contact:hover,
 .button.contact:focus,
 .button.contact:active {
-  background-color: #2FC723;
+  background-color: #e8ff1c;
   color: #286757;
-  }
-.button.contact:visited{
+  opacity: 0.8;
+}
+
+.button.contact:visited {
   color: #B3F200;
 }
 
 /* next area for Read button style */
 .button.read {
+  display: inline-block;
   width: 300px;
-  padding: 10px 0;
+  padding: 10px;
   text-align: center;
   background-color: #286757;
   color: #ffffff;
   font-weight: 400;
-  padding: 5px;
   border-radius: 3px;
-  transition: 0.2s opacity;
+  transition-duration: 2s;
+  transition-property: opacity;
 }
 .button.read:hover,
 .button.read:active {
+  opacity: 0.8;
   background-color: #2FC723;
   color: #286757;
-  }
-.button.read:visited{
+  width: 400px;
+}
+.button.read:visited {
   color: #B3F200;
 }
 
 /* layout Styling */
-.container{
+.container {
   padding: 0 15px;
 }
 
-.row{
+.row {
   margin: 15px 0;
 }
 
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
- }
-
- #hero h1{
-   text-align: center;
- }
- #hero span{
-   text-align: center;
- }
-#hero{
-  background-color: #D3E0D3;
-  color:#181A1B;
-  margin: 5px;
 }
 
- .logo{
-   max-width: 250px:
- }
+#hero span {
+  display: block;
+}
+
+#hero {
+  background-color: #D3E0D3;
+  color: #181A1B;
+  margin: 5px;
+  text-align: center;
+}
+
+/* Medium decives (640px and larger) */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+    position: fixed;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 120px
+  }
+
+  body {
+    font-size: 18px;
+    /* Sets the font size to 16px */
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Large decives (1024px and larger) */
+  @media only screen and (min-width: 1024px) {
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+      position: fixed;
+    }
+
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
+
+    main {
+      padding-top: 130px
+    }
+
+    body {
+      font-size: 25px;
+    }
+
+    .col-lg-7 {
+      width: 60%;
+    }
+
+    .col-lg-5 {
+      width: 40%;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    /* X-large decives (1440px and larger) */
+    @media only screen and (min-width: 1440px) {
+      header {
+        text-align: unset;
+        padding: 20px 0 13px;
+        position: fixed;
+      }
+
+      nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+      }
+
+      main {
+        padding-top: 130px
+      }
+
+      body {
+        font-size: 30px;
+      }
+
+    @keyframes color-change {
+      from {fill: #edc655;}
+      to {fill: #f76414;}
+    }
+    .sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 25s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 20s cloud-move-reverse infinite alternate linear;
+}
