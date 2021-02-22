@@ -30,7 +30,6 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.50em;
   font-weight: 700;
-
 }
 
 h2 {
@@ -52,17 +51,13 @@ header {
   position: fixed;
   width: 100%;
   background-color: #D3E0D3;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
+  padding: 15px 0 4px;
   margin: 5px;
   border-bottom: 2px solid #4a4a4a;
-  text-align: center;
 }
 
 main {
-  padding-top: 133px
+  padding-top: 70px
 }
 
 footer {
@@ -77,8 +72,8 @@ footer {
   text-align: center;
 }
 
-.center{
-  display:block;
+.center {
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -99,25 +94,59 @@ a:active {
   color: #2FC723;
 }
 
-nav>ul>a {
-  display: inline-block;
+nav>ul>li>a {
+  text-decoration: none;
   list-style-type: none;
-  padding: 2px 10px 2px 10px;
+  padding: 4px 10px 4px 10px;
   text-transform: uppercase;
   font-weight: 600;
   background-color: #286757;
   color: #ffffff;
   border-radius: 3px;
   transition: 0.2s opacity;
+  margin: 0;
+  margin-top: -5px;
 }
 
-nav>ul>a:hover,
-nav>ul>a:focus,
-nav>ul>a:active {
+nav>ul>li>a:hover,
+nav>ul>li>a:focus,
+nav>ul>li>a:active {
   background-color: #2FC723;
   color: #286757;
   text-decoration: none;
   font-weight: 600;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  margin-right: 5px;
+  }
+
+
+.navtoggle.responsive nav>ul>li>a {
+  text-decoration: none;
+  float: right;
+  margin-right: 5px;
+  }
+
+  .navtoggle.responsive li  {
+    display: block;
+float:left;
+  }
+
+.navtoggle.responsive ul {
+float: right;
 }
 
 /* next area for contact button style */
@@ -158,12 +187,14 @@ nav>ul>a:active {
   transition-duration: 2s;
   transition-property: opacity;
 }
+
 .button.read:hover,
 .button.read:active {
   opacity: 0.8;
   background-color: #2FC723;
   color: #286757;
-  }
+}
+
 .button.read:visited {
   color: #B3F200;
 }
@@ -177,15 +208,16 @@ nav>ul>a:active {
   margin: 15px 0;
 }
 
-.aboutinfo{
+.aboutinfo {
   padding-top: 20px
 }
-.aboutheading{
+
+.aboutheading {
   text-align: center;
   font-size: 20px;
 }
 
-.minilogo{
+.minilogo {
   margin: auto;
   background-color: #286757;
   height: auto;
@@ -195,6 +227,9 @@ nav>ul>a:active {
   margin-bottom: 5px;
 }
 
+.logo {
+  max-width: 150px;
+}
 
 #work .row {
   padding-bottom: 25px;
@@ -213,21 +248,41 @@ nav>ul>a:active {
 }
 
 /* Medium decives (640px and larger) */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
+
   header {
-    text-align: unset;
     padding: 20px 0 13px;
     position: fixed;
   }
 
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
+  .logo {
+    min-width: 300px;
   }
 
+  nav>ul>li>a {
+    display: inline-block;
+    text-decoration: none;
+    float: right;
+    margin-top: 1em 0;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  ul{
+    text-align: right;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+  display: none;
+}
+
   main {
-    padding-top: 120px
+    padding-top: 160px
   }
 
   body {
@@ -258,8 +313,12 @@ nav>ul>a:active {
       position: fixed;
     }
 
-    nav {
-      width: auto;
+    .logo {
+      min-width: 340px;
+    }
+
+    nav>ul>li>a{
+      display: inline-block;
       float: right;
       margin-top: 4px;
     }
@@ -292,6 +351,10 @@ nav>ul>a:active {
         text-align: unset;
         padding: 20px 0 13px;
         position: fixed;
+      }
+
+      .logo {
+        min-width: 400px;
       }
 
       nav {
