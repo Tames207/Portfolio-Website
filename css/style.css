@@ -21,6 +21,7 @@ body {
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
   color: #ffffff;
+
 }
 
 h1, h2, h3, h4 {
@@ -52,13 +53,12 @@ header {
   width: 100%;
   background-color: #D3E0D3;
   padding: 15px 0 4px;
-  margin: 5px;
   border-bottom: 2px solid #4a4a4a;
 }
 
 main {
   padding-top: 70px
-}
+  }
 
 footer {
   width: 100%;
@@ -68,7 +68,6 @@ footer {
   padding-right: 5px;
   padding-bottom: 5px;
   padding-left: 5px;
-  margin: 5px;
   text-align: center;
 }
 
@@ -149,13 +148,17 @@ float:left;
 float: right;
 }
 
+ul.a {
+  list-style-type: disc;
+}
+
 /* next area for contact button style */
 .button.contact {
   text-align: center;
   background-color: #2FC723;
   color: #ffffff;
   font-weight: 400;
-  padding: 5px;
+  padding: 3px;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 3px;
@@ -244,7 +247,6 @@ float: right;
 #hero {
   background-color: #D3E0D3;
   color: #181A1B;
-  margin: 5px;
   text-align: center;
 }
 
@@ -265,14 +267,6 @@ float: right;
     text-decoration: none;
     float: right;
     margin-top: 1em 0;
-  }
-
-  li {
-    display: inline-block;
-  }
-
-  ul{
-    text-align: right;
   }
 
   .navtoggle li:not(:last-child) {
