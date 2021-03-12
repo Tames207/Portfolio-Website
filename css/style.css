@@ -219,7 +219,7 @@ float: right;
 
 /* layout Styling */
 .container {
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .row {
@@ -239,6 +239,7 @@ float: right;
   margin: auto;
   background-color: #1C75BC;
   height: auto;
+  width: auto;
   padding: 5px;
   display: flex;
   justify-content: center;
@@ -315,7 +316,7 @@ float: right;
     }
 
     main {
-      padding-top: 130px
+      padding-top: 175px
     }
 
     body {
